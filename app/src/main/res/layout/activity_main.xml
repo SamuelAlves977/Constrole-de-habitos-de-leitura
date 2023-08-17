@@ -26,7 +26,8 @@
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.136" />
+        app:layout_constraintVertical_bias="0.136"
+        tools:ignore="HardcodedText,SpUsage" />
 
     <EditText
         android:id="@+id/campoEmail"
@@ -34,13 +35,13 @@
         android:layout_height="47dp"
         android:ems="10"
         android:inputType="text"
-        android:text="email:"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logo"
-        app:layout_constraintVertical_bias="0.263" />
+        app:layout_constraintVertical_bias="0.263"
+        tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck,TextFields,TouchTargetSizeCheck" />
 
     <!-- Campo senha-->
 
@@ -57,8 +58,11 @@
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TextPasswordLogin"
-        app:layout_constraintVertical_bias="0.055" />
+        app:layout_constraintVertical_bias="0.055"
+        tools:ignore="HardcodedText,TouchTargetSizeCheck" />
 
+
+    <!-- campo com a informação "email"-->
 
     <EditText
         android:id="@+id/TextPasswordLogin"
@@ -71,9 +75,24 @@
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/campoEmail"
-        app:layout_constraintVertical_bias="0.175" />
+        app:layout_constraintVertical_bias="0.135"
+        tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
-    <!-- campo com a informação "email"-->
+    <TextView
+        android:id="@+id/textViewSenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Senha"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/TextPasswordLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.122"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/campoEmail"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="HardcodedText,SpUsage,TextSizeCheck" />
+
     <TextView
         android:id="@+id/textViewEmail"
         android:layout_width="wrap_content"
@@ -86,20 +105,41 @@
         app:layout_constraintHorizontal_bias="0.12"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logo"
-        app:layout_constraintVertical_bias="0.906" />
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="HardcodedText,SpUsage,TextSizeCheck" />
 
+
+    <!--campo para esquici minha senha-->
+
+    <!--campo para cadastre -se -->
     <TextView
-        android:id="@+id/textViewSenha"
+        android:id="@+id/textViewEsqueceuSenha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Senha"
-        android:textSize="15dp"
+        android:text="Esquici minha senha? "
+        android:textSize="12dp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/TextPasswordLogin"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.121"
+        app:layout_constraintHorizontal_bias="0.157"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/campoEmail"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin"
+        app:layout_constraintVertical_bias="0.082"
+        tools:ignore="HardcodedText,SpUsage,TextSizeCheck" />
 
+    <TextView
+        android:id="@+id/txtVCriarConta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CRIAR CONTA"
+        android:textColor="@color/azulmarinho"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.767"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin"
+        app:layout_constraintVertical_bias="0.083"
+        tools:ignore="HardcodedText,SpUsage,TextSizeCheck" />
 </androidx.constraintlayout.widget.ConstraintLayout>
